@@ -27,6 +27,7 @@ img {
   width: 100px;
   height: 100px;
   border-radius: 50%;
+  object-fit: cover; /* Ensures the image fits within the circle */
 }
 
 h1 {
