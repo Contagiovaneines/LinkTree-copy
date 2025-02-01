@@ -1,0 +1,43 @@
+.linkList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  padding: 0;
+
+  li {
+    list-style: none;
+    a {
+      text-decoration: none;
+      display: flex; /* Flexbox para ícone e texto */
+      align-items: center; /* Alinha o texto e o ícone verticalmente */
+      justify-content: center; /* Centraliza o conteúdo */
+      position: relative; /* Necessário para alinhar o ícone à esquerda */
+      font-size: 16px;
+      color: #373737;
+      background-color: white;
+      padding: 24px 12px;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s, background-color 0.3s;
+
+      &:hover {
+        transform: scale(1.02);
+        background-color: #cccccc;
+      }
+
+      /* Alinha o ícone à esquerda */
+      .icon-container {
+        position: absolute;
+        left: 12px;
+        font-size: 18px; /* Ajuste do tamanho do ícone */
+      }
+
+      /* Texto centralizado */
+      span {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
+}
